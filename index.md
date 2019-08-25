@@ -14,11 +14,11 @@ bash <(curl -s https://raw.githubusercontent.com/tormozzg/configs/master/vim_con
 
 ```
 
-## Raw sh
+## Raw 
 
 Append into .vimrc 
 
-```bash
+```
 set tabstop=2
 set shiftwidth=2
 set smarttab
