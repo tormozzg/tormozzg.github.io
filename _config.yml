@@ -1,4 +1,7 @@
 theme: jekyll-theme-cayman
 title: Who am i?
+relative_links:
+  enabled: true
+  collections: true
 include:
   - mysql_tips.md
