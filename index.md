@@ -5,12 +5,12 @@
 ### Wget
 
 ```bash
-wget -O - https://raw.githubusercontent.com/tormozzg/configs/master/vim_config.sh | bash
+wget -O - https://raw.githubusercontent.com/tormozzg/tormozzg.github.io/master/vim_config.sh | bash
 ```
 
 ## Curl
 ```bash
-bash <(curl -s https://raw.githubusercontent.com/tormozzg/configs/master/vim_config.sh)
+bash <(curl -s https://raw.githubusercontent.com/tormozzg/tormozzg.github.io/master/vim_config.sh)
 
 ```
 
@@ -41,17 +41,17 @@ set softtabstop=0 noexpandtab
 ```
 
 
-## Git configs
+## Git tormozzg.github.io
 
 ### Wget
 
 ```bash
-wget -O - https://raw.githubusercontent.com/tormozzg/configs/master/git_config.sh | bash
+wget -O - https://raw.githubusercontent.com/tormozzg/tormozzg.github.io/master/git_config.sh | bash
 ```
 
 ### Curl
 ```bash
-bash <(curl -s https://raw.githubusercontent.com/tormozzg/configs/master/git_config.sh)
+bash <(curl -s https://raw.githubusercontent.com/tormozzg/tormozzg.github.io/master/git_config.sh)
 
 ```
 
@@ -92,12 +92,12 @@ bash <(curl -s https://raw.githubusercontent.com/tormozzg/configs/master/git_con
 ### Wget
 
 ```bash
-wget -O - https://raw.githubusercontent.com/tormozzg/configs/master/git_ps1.sh | bash
+wget -O - https://raw.githubusercontent.com/tormozzg/tormozzg.github.io/master/git_ps1.sh | bash
 ```
 
 ### Curl
 ```bash
-bash <(curl -s https://raw.githubusercontent.com/tormozzg/configs/master/git_ps1.sh)
+bash <(curl -s https://raw.githubusercontent.com/tormozzg/tormozzg.github.io/master/git_ps1.sh)
 
 ```
 
@@ -122,6 +122,6 @@ git_status_substitutes=(
     "s/\(.\+\)/\1/;" # insert branch again
 )
 git_status_command="\$(if [ \"$git_current_branch_name\" != '' ]; then echo \" \e[1;32m[$git_current_branch_name]\[\033[00m\]\$(__git_ps1 '%s'| sed \"${git_status_substitutes[@]}\")\"; fi; )"
-PS1="\[\e]0;\u@\h: \w\a\]${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]$git_status_command\[\033[0;37m\]\$\[\033[0;00m\] "
+PS1="\[\e[31m\][\t]\[\e[m\] \[\e]0;\u@\h: \w\a\]${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]$git_status_command\[\033[0;37m\]\$\[\033[0;00m\] "
 unset git_status_substitutes git_status_command git_current_branch_namehs
 ```
