@@ -8,13 +8,13 @@
 wget -O - https://raw.githubusercontent.com/tormozzg/tormozzg.github.io/master/vim_config.sh | bash
 ```
 
-## Curl
+### Curl
 ```bash
 bash <(curl -s https://raw.githubusercontent.com/tormozzg/tormozzg.github.io/master/vim_config.sh)
 
 ```
 
-## Raw 
+### Raw 
 
 Append into .vimrc 
 
@@ -41,7 +41,7 @@ set softtabstop=0 noexpandtab
 ```
 
 
-## Git tormozzg.github.io
+## Git config
 
 ### Wget
 
@@ -124,4 +124,20 @@ git_status_substitutes=(
 git_status_command="\$(if [ \"$git_current_branch_name\" != '' ]; then echo \" \e[1;32m[$git_current_branch_name]\[\033[00m\]\$(__git_ps1 '%s'| sed \"${git_status_substitutes[@]}\")\"; fi; )"
 PS1="\[\e[31m\][\t]\[\e[m\] \[\e]0;\u@\h: \w\a\]${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]$git_status_command\[\033[0;37m\]\$\[\033[0;00m\] "
 unset git_status_substitutes git_status_command git_current_branch_namehs
+```
+
+# Mysql tips
+
+## Musqldump
+
+### Create dump
+
+```bash 
+read -s passwd ; mysqldump -udb_user -p$passwd db_name --single-transaction |pv -bat |gzip > dump.$(date +'%d.%m.%Y').sql.gz
+```
+
+### Restore dump
+
+```bash
+gunzip < dump.sql.gz | mysql -udb_user -p db_name
 ```
