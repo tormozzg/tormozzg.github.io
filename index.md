@@ -1,3 +1,7 @@
+TOC
+
+{:toc}
+
 # Config
 
 ## Vim config

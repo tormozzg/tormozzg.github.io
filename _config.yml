@@ -1,5 +1,6 @@
 theme: jekyll-theme-cayman
 title: Who am i?
+markdown: kramdown
 relative_links:
   enabled: true
   collections: true
