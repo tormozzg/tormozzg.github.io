@@ -139,5 +139,5 @@ read -s passwd ; mysqldump -udb_user -p$passwd db_name --single-transaction |pv 
 ### Restore dump
 
 ```bash
-gunzip < dump.sql.gz | mysql -udb_user -p db_name
+pv dump.sql.gz | zcat | mysql -udb_user -p db_name
 ```
