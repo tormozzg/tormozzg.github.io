@@ -141,3 +141,10 @@ read -s passwd ; mysqldump -udb_user -p$passwd db_name --single-transaction |pv 
 ```bash
 pv dump.sql.gz | zcat | mysql -udb_user -p db_name
 ```
+
+
+# Git tips
+
+## Diff of branches list
+
+`git diff $(git branch --remotes | sed  -e s/[\s]*origin\\/// | sed -n '1!p' | git hash-object -w --stdin) $(git branch | git hash-object -w --stdin) --word-diff`
