@@ -19,12 +19,14 @@ bash <(curl -s https://raw.githubusercontent.com/tormozzg/tormozzg.github.io/mas
 Append into .vimrc 
 
 ```
+filetype plugin indent on
+set expandtab
 set tabstop=2
 set shiftwidth=2
 set smarttab
 set wrap
 set ai
-set cin
+set cin 
 set showmatch
 set hlsearch
 set incsearch
@@ -33,10 +35,6 @@ set number
 syntax on
 colorscheme lucius
 set background=light
-set expandtab
-set tabstop=2
-set shiftwidth=2
-set tabstop=4 softtabstop=0 expandtab shiftwidth=2 smarttab
 set softtabstop=0 noexpandtab
 ```
 
