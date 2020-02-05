@@ -2,10 +2,10 @@
 
 mkdir -p ~/.vim/colors
 if [ -x "$(command -v wget)" ]; then
-    wget -q https://raw.githubusercontent.com/tormozzg/configs/master/lucius.vim -O ~/.vim/colors/lucius.vim
+    wget -q https://raw.githubusercontent.com/tormozzg/tormozzg.github.io/master/lucius.vim -O ~/.vim/colors/lucius.vim
     echo 'Wget: Colors downloaded'
 elif [ -x "$(command -o curl)" ]; then
-    curl -s https://raw.githubusercontent.com/tormozzg/configs/master/lucius.vim --output ~/.vim/colors/lucius.vim
+    curl -s https://raw.githubusercontent.com/tormozzg/tormozzg.github.io/master/lucius.vim --output ~/.vim/colors/lucius.vim
     echo 'Curl: Colors downloaded'
 else
     echo 'Error: Please install wget or curl;'
