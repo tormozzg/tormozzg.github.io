@@ -32,4 +32,4 @@ git config --global core.fileMode false
 git config --global core.quotepath false
 git config --global push.default current
 
-echo "Git config successfully applied"
+echo "Git config has been successfully applied"

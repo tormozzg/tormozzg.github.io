@@ -10,4 +10,4 @@ else
     exit 1
 fi
 
-echo "Git PS1 successfully applied"
+echo "Git PS1 has been uccessfully applied"
