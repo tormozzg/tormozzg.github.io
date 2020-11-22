@@ -33,7 +33,6 @@ set incsearch
 set ignorecase
 set number
 syntax on
-colorscheme lucius
 set background=light
 set softtabstop=0 noexpandtab
 ```
@@ -76,6 +75,8 @@ bash <(curl -s https://raw.githubusercontent.com/tormozzg/tormozzg.github.io/mas
     sa = stash apply
     ss = stash save
     lds = log --pretty=format:%C(yellow)%h\\ %C(green)%ad%Cred%d\\ %Creset%s%Cgreen\\ [%cn] --decorate --date=rfc2822
+    sw = switch
+    swc = switch -c
 [color]
     ui = true
 [core]

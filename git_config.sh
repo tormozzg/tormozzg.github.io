@@ -25,6 +25,8 @@ git config --global alias.sl  "stash list"
 git config --global alias.sa  "stash apply"
 git config --global alias.ss  "stash save"
 git config --global alias.lds "log --pretty=format:%C(yellow)%h\\ %C(green)%ad%Cred%d\\ %Creset%s%Cgreen\\ [%cn] --decorate --date=rfc2822"
+git config --global alias.sw "switch"
+git config --global alias.swc "switch -c"
 git config --global color.ui true
 git config --global core.autocrlf input
 git config --global core.editor vim
