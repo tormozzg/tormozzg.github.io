@@ -73,6 +73,7 @@ bash <(curl -s https://raw.githubusercontent.com/tormozzg/tormozzg.github.io/mas
     dc = diff --cached
     sl = stash list
     sa = stash apply
+    sp = stash pop
     ss = stash save
     lds = log --pretty=format:%C(yellow)%h\\ %C(green)%ad%Cred%d\\ %Creset%s%Cgreen\\ [%cn] --decorate --date=rfc2822
     sw = switch
