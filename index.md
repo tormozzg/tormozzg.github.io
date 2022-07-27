@@ -75,6 +75,7 @@ bash <(curl -s https://raw.githubusercontent.com/tormozzg/tormozzg.github.io/mas
     sa = stash apply
     sp = stash pop
     ss = stash save
+    poop = push -u origin
     lds = log --pretty=format:%C(yellow)%h\\ %C(green)%ad%Cred%d\\ %Creset%s%Cgreen\\ [%cn] --decorate --date=rfc2822
     sw = switch
     swc = switch -c
