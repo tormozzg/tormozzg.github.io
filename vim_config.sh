@@ -26,5 +26,5 @@ echo "set incsearch" >> ~/.vimrc
 echo "set ignorecase" >> ~/.vimrc
 echo "syntax on" >> ~/.vimrc
 echo "colorscheme lucius" >> ~/.vimrc
-echo "set background=light" >> ~/.vimrc
+echo "set background=dark" >> ~/.vimrc
 echo "set softtabstop=0 noexpandtab" >> ~/.vimrc
