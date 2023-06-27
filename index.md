@@ -31,7 +31,6 @@ set showmatch
 set hlsearch
 set incsearch
 set ignorecase
-set number
 syntax on
 set background=light
 set softtabstop=0 noexpandtab
