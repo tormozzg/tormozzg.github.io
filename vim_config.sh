@@ -13,7 +13,6 @@ echo "set showmatch" >> ~/.vimrc
 echo "set hlsearch" >> ~/.vimrc
 echo "set incsearch" >> ~/.vimrc
 echo "set ignorecase" >> ~/.vimrc
-echo "set number" >> ~/.vimrc
 echo "syntax on" >> ~/.vimrc
 echo "set background=light" >> ~/.vimrc
 echo "set softtabstop=0 noexpandtab" >> ~/.vimrc
